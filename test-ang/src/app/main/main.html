@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-12">
-        <uib-pagination total-items="vm.meta.totalItems" ng-model="vm.meta.currentPage" max-size="vm.maxSize" items-per-page="vm.meta.limit" class="pagination-sm" boundary-links="true" rotate="false"></uib-pagination>
+        <uib-pagination total-items="vm.meta.totalItems" ng-model="vm.meta.currentPage" ng-change="vm.changePage()" max-size="vm.maxSize" items-per-page="vm.meta.limit" class="pagination-sm" boundary-links="true" rotate="false"></uib-pagination>
     </div>
 </div>
 <div class="row">
